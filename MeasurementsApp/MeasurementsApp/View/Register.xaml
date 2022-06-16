@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeasurementsApp.Register">
+    <ContentPage.Content>
+        <StackLayout Padding="40" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+            
+            <Entry x:Name="enteredName"  Placeholder="Username"></Entry>
+            <Entry x:Name="registerPassword" Placeholder="Password" IsPassword="True"></Entry>
+            <Entry x:Name="confirmPassword" Placeholder="Confirm Password" IsPassword="True"></Entry>
+            <Button VerticalOptions="Center" Text="Register" Clicked="Button_Clicked"></Button>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

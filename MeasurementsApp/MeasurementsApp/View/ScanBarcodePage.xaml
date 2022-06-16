@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeasurementsApp.ScanBarcodePage"
+             xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms">
+    <ContentPage.Content>
+        <StackLayout Margin="50">
+                <Label Text="Scan the barcode using your phone.           
+                        After scanning the barcode string should appear bellow. Press the 'Assign' button to finish the setup" 
+                  
+                   HorizontalTextAlignment="Center"/>
+                <zxing:ZXingScannerView x:Name="scanner" IsScanning="False" IsVisible="False" IsEnabled="False" OnScanResult="scanner_OnScanResult"></zxing:ZXingScannerView>
+                <Button Text="Scan Barcode" Clicked="Scan_Clicked"/>
+                <Label x:Name="nameString" Text="Sample String" 
+                   TextColor="Coral" 
+                   HorizontalOptions="Center"
+                   Margin="0,50,0,0"
+                   FontSize="32"/>
+                <Button Text="Assign" Margin="0,50,0,0" Clicked="Assign_Clicked"/>
+
+        </StackLayout>
+            
+                
+        
+        </ContentPage.Content>
+</ContentPage>
